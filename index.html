@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techverse.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md fixed w-full z-20 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-600">Techverse</a>
+        </div>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#" class="hover:text-indigo-600">Home</a>
+          <a href="#products" class="hover:text-indigo-600">Products</a>
+          <a href="#reviews" class="hover:text-indigo-600">Reviews</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <section class="pt-16">
+    <div class="relative w-full h-[70vh] overflow-hidden">
+      <!-- Slides -->
+      <div class="relative h-full">
+        <!-- 1 -->
+        <input type="radio" name="carousel" id="slide1" class="hidden peer/slide1" checked>
+        <div class="absolute inset-0 opacity-0 peer-checked/slide1:opacity-100 transition-opacity duration-700 bg-indigo-600 flex items-center justify-center text-center text-white">
+          <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Techverse</h1>
+            <p class="mb-6 text-lg">Your one-stop solution for amazing products.</p>
+            <a href="#products" class="px-6 py-3 bg-white text-indigo-600 rounded-lg font-bold hover:bg-gray-200">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <input type="radio" name="carousel" id="slide2" class="hidden peer/slide2">
+        <div class="absolute inset-0 opacity-0 peer-checked/slide2:opacity-100 transition-opacity duration-700 bg-green-600 flex items-center justify-center text-center text-white">
+          <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Quality You Can Trust</h1>
+            <p class="mb-6 text-lg">Top-rated products and customer support.</p>
+            <a href="#reviews" class="px-6 py-3 bg-white text-green-600 rounded-lg font-bold hover:bg-gray-200">See Reviews</a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <input type="radio" name="carousel" id="slide3" class="hidden peer/slide3">
+        <div class="absolute inset-0 opacity-0 peer-checked/slide3:opacity-100 transition-opacity duration-700 bg-purple-600 flex items-center justify-center text-center text-white">
+          <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Join Our Community</h1>
+            <p class="mb-6 text-lg">Be a part of our growing family today.</p>
+            <a href="#cta" class="px-6 py-3 bg-white text-purple-600 rounded-lg font-bold hover:bg-gray-200">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- navb -->
+      <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-3">
+        <label for="slide1" class="w-4 h-4 bg-white rounded-full cursor-pointer"></label>
+        <label for="slide2" class="w-4 h-4 bg-white rounded-full cursor-pointer"></label>
+        <label for="slide3" class="w-4 h-4 bg-white rounded-full cursor-pointer"></label>
+      </div>
+    </div>
+  </section>
+
+  <!-- pdt cards -->
+  <section id="products" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition p-4">
+          <img src="https://www.excelestore.com.bd/public/uploads/all/YvR9BJuECD3V1zye3RByu2I7n26U1BELPK4LoDq0.webp" class="rounded-md mb-4 w-full h-48 object-cover" alt="Product">
+          <h3 class="font-bold text-lg">Samsung Galaxy S25 Ultra</h3>
+          <p class="text-sm text-gray-600 mb-2">Samsung Galaxy S25 Ultra | Samsung</p>
+          <p class="font-bold mb-4">$999</p>
+          <button class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Buy Now</button>
+        </div>
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition p-4">
+          <img src="https://www.apple.com/au/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg" class="rounded-md mb-4 w-full h-48 object-cover" alt="Product">
+          <h3 class="font-bold text-lg">Iphone 17 Pro Max</h3>
+          <p class="text-sm text-gray-600 mb-2">Iphone 17 Pro Max | Apple</p>
+          <p class="font-bold mb-4">$1100</p>
+          <button class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Buy Now</button>
+        </div>
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition p-4">
+          <img src="https://app-area.riointernational.com.bd/productImages/1755772695Ziii2.png" class="rounded-md mb-4 w-full h-48 object-cover" alt="Product">
+          <h3 class="font-bold text-lg">Pixel 10 pro XL</h3>
+          <p class="text-sm text-gray-600 mb-2">Pixel 10 pro XL | Pixel</p>
+          <p class="font-bold mb-4">$899</p>
+          <button class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reviews -->
+  <section id="reviews" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Customer Reviews</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://media.istockphoto.com/id/2063799507/photo/business-portrait-and-black-man-in-city-outdoor-for-career-or-job-of-businessman-face.jpg?s=612x612&w=0&k=20&c=DB5oXy7_aasPbpr7zfpfV92ZYsPIQfFWLyweKEz_UVs=" class="w-16 h-16 rounded-full mx-auto mb-4" alt="Customer">
+          <h3 class="font-bold text-center">Alice</h3>
+          <p class="text-yellow-500 text-center">★★★★★</p>
+          <p class="text-sm mt-2 text-center">Amazing products! Highly recommend to everyone.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://media.istockphoto.com/id/2172873491/photo/university-student-and-man-in-portrait-outdoor-on-campus-with-book-for-education-learning-and.jpg?s=612x612&w=0&k=20&c=0jJ62Pxg9qWg2DKCl0pVQmN1j618h01SXJ7DGdlpsZM=" class="w-16 h-16 rounded-full mx-auto mb-4" alt="Customer">
+          <h3 class="font-bold text-center">Bob</h3>
+          <p class="text-yellow-500 text-center">★★★★☆</p>
+          <p class="text-sm mt-2 text-center">Great value for money and fast delivery.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://img.freepik.com/free-photo/expressive-woman-posing-outdoor_344912-3079.jpg?semt=ais_hybrid&w=740&q=80" class="w-16 h-16 rounded-full mx-auto mb-4" alt="Customer">
+          <h3 class="font-bold text-center">Charlie</h3>
+          <p class="text-yellow-500 text-center">★★★★★</p>
+          <p class="text-sm mt-2 text-center">Excellent customer service and quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <p class="mb-2"><strong>Address:</strong> Gec, chittagong, Bangladesh</p>
+        <p class="mb-2"><strong>Email:</strong> techverse.com</p>
+        <p class="mb-6"><strong>Phone:</strong> +8801xxxxxxxxx</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          <button class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Send</button>
+        </form>
+      </div>
+      <div class="hidden md:flex items-center justify-center">
+        <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?semt=ais_hybrid&w=740&q=80" alt="Contact Illustration" class="rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- cta -->
+  <section id="cta" class="py-16 bg-indigo-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Join Our Community Today!</h2>
+    <p class="mb-6">Be the first to get updates, discounts, and more.</p>
+    <a href="#" class="px-8 py-3 bg-white text-indigo-600 rounded-lg font-bold hover:bg-gray-200">Subscribe Now</a>
+  </section>
+
+  <!-- ftr -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="mb-4 md:mb-0">&copy; 2025 Techverse. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-white">Home</a>
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" class="w-5 h-5" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" class="w-5 h-5" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" class="w-5 h-5" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
